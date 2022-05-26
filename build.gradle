@@ -22,7 +22,3 @@ dependencies {
 
     testImplementation 'junit:junit'
 }
-
-tasks.named('test') {
-    useJUnitPlatform()
-}

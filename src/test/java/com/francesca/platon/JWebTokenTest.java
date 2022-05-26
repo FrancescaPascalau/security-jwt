@@ -12,7 +12,6 @@ import org.junit.Test;
 import java.security.NoSuchAlgorithmException;
 import java.time.LocalDateTime;
 import java.time.ZoneOffset;
-import java.util.Map;
 
 import static org.junit.Assert.fail;
 
@@ -31,8 +30,8 @@ public class JWebTokenTest {
     @Before
     public void setUp() {
         LocalDateTime ldt = LocalDateTime.now().plusDays(90);
-        payload = new JSONObject(Map.of(1, "{\"sub\":\"1234\",\"aud\":[\"admin\"],"
-                + "\"exp\":" + ldt.toEpochSecond(ZoneOffset.UTC) + "}"));
+        payload = new JSONObject("{\"sub\":\"1234\",\"aud\":[\"admin\"],"
+                + "\"exp\":" + ldt.toEpochSecond(ZoneOffset.UTC) + "}");
     }
 
     @After
