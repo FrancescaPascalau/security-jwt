@@ -1,0 +1,13 @@
+<html>
+<head>
+    <title>Java OAuth 2.0 Basic Implementation</title>
+</head>
+<body>
+<h1 th:text="'Welcome, ' + ${email} + '!'"></h1>
+<ul>
+    <li th:if="${lastAccess}" th:text="'Last access: ' + ${{lastAccess}}"></li>
+    <li th:if="${firstName}" th:text="'First name: ' + ${{firstName}}"></li>
+    <li th:if="${lastName}" th:text="'Last name: ' + ${{lastName}}"></li>
+</ul>
+</body>
+</html>
