@@ -1,4 +1,4 @@
-package com.francesca.platon;
+package com.francesca.platon.jwt;
 
 import org.json.JSONArray;
 import org.json.JSONException;

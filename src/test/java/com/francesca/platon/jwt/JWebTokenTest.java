@@ -1,5 +1,6 @@
-package com.francesca.platon;
+package com.francesca.platon.jwt;
 
+import com.francesca.platon.jwt.JWebToken;
 import org.json.JSONArray;
 import org.json.JSONObject;
 import org.junit.After;
